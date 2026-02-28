@@ -1,107 +1,69 @@
-"use client";
-
 import { motion } from "framer-motion";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Card } from "./ui/card";
+import { Star } from "lucide-react";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 
 const testimonials = [
   {
-    name: "Michael Chen",
-    role: "Professional Trader",
-    image: "https://avatars.githubusercontent.com/u/1234567?v=4",
-    content: "The real-time market data and advanced trading features have significantly improved my trading performance. The platform's security measures give me peace of mind."
-  },
-  {
-    name: "Sarah Johnson",
-    role: "Crypto Fund Manager",
-    image: "https://avatars.githubusercontent.com/u/2345678?v=4",
-    content: "CryptoTrade's institutional-grade tools have transformed our trading strategy. The API integration and automated features have saved us countless hours."
-  },
-  {
-    name: "David Wilson",
-    role: "Early Crypto Investor",
-    image: "https://avatars.githubusercontent.com/u/3456789?v=4",
-    content: "The customer support is exceptional, and the platform's intuitive design made getting started with crypto trading seamless. A game-changer for both beginners and pros."
-  },
-  {
-    name: "Emily Zhang",
-    role: "DeFi Developer",
-    image: "https://avatars.githubusercontent.com/u/4567890?v=4",
-    content: "We've seen remarkable improvements in our trading efficiency since switching to CryptoTrade. The smart order routing and liquidity aggregation are particularly impressive."
+    name: "Sarah Mitchell",
+    role: "CEO, TechScale",
+    content: "Rezaul built an AI automation system that saved our team 25 hours per week. The ROI was visible within the first month.",
   },
   {
     name: "James Rodriguez",
-    role: "Crypto Security Expert",
-    image: "https://avatars.githubusercontent.com/u/5678901?v=4",
-    content: "The security features are robust and the regular updates keep us ahead of emerging threats. It's exactly what the crypto industry needed."
+    role: "Founder, DataFlow",
+    content: "The ML pipeline he built predicts our sales with 87% accuracy. It completely changed how we allocate resources.",
   },
   {
-    name: "Lisa Thompson",
-    role: "Portfolio Manager",
-    image: "https://avatars.githubusercontent.com/u/6789012?v=4",
-    content: "The platform's ability to handle complex trading strategies while maintaining simplicity in its interface is remarkable. It's been invaluable for our portfolio management."
-  }
+    name: "Emily Chen",
+    role: "CTO, Growthly",
+    content: "Our custom dashboard went from concept to production in 3 weeks. Clean code, great communication, and zero issues post-launch.",
+  },
 ];
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 overflow-hidden bg-black">
-      <div className="container px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-5xl font-normal mb-4">Trusted by Traders</h2>
-          <p className="text-muted-foreground text-lg">
-            Join thousands of satisfied traders on CryptoTrade
-          </p>
-        </motion.div>
+    <section id="testimonials" className="container px-4 py-24">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center mb-16"
+      >
+        <span className="text-primary font-medium text-sm uppercase tracking-wider">Testimonials</span>
+        <h2 className="text-4xl md:text-5xl font-bold mt-3 tracking-tight">
+          What Clients <span className="text-gradient">Say</span>
+        </h2>
+      </motion.div>
 
-        <div className="relative flex flex-col antialiased">
-          <div className="relative flex overflow-hidden py-4">
-            <div className="animate-marquee flex min-w-full shrink-0 items-stretch gap-8">
-              {testimonials.map((testimonial, index) => (
-                <Card key={`${index}-1`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-white/10 transition-all duration-300 p-8">
-                  <div className="flex items-center gap-4 mb-6">
-                    <Avatar className="h-12 w-12">
-                      <AvatarImage src={testimonial.image} />
-                      <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h4 className="font-medium text-white/90">{testimonial.name}</h4>
-                      <p className="text-sm text-white/60">{testimonial.role}</p>
-                    </div>
-                  </div>
-                  <p className="text-white/70 leading-relaxed">
-                    {testimonial.content}
-                  </p>
-                </Card>
+      <div className="grid md:grid-cols-3 gap-8">
+        {testimonials.map((t, i) => (
+          <motion.div
+            key={t.name}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: i * 0.1 }}
+            className="p-8 rounded-2xl border border-border bg-card"
+          >
+            <div className="flex gap-1 mb-4">
+              {[...Array(5)].map((_, j) => (
+                <Star key={j} className="w-4 h-4 fill-primary text-primary" />
               ))}
             </div>
-            <div className="animate-marquee flex min-w-full shrink-0 items-stretch gap-8">
-              {testimonials.map((testimonial, index) => (
-                <Card key={`${index}-2`} className="w-[400px] shrink-0 bg-black/40 backdrop-blur-xl border-white/5 hover:border-white/10 transition-all duration-300 p-8">
-                  <div className="flex items-center gap-4 mb-6">
-                    <Avatar className="h-12 w-12">
-                      <AvatarImage src={testimonial.image} />
-                      <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h4 className="font-medium text-white/90">{testimonial.name}</h4>
-                      <p className="text-sm text-white/60">{testimonial.role}</p>
-                    </div>
-                  </div>
-                  <p className="text-white/70 leading-relaxed">
-                    {testimonial.content}
-                  </p>
-                </Card>
-              ))}
+            <p className="text-muted-foreground mb-6 leading-relaxed">"{t.content}"</p>
+            <div className="flex items-center gap-3">
+              <Avatar className="h-10 w-10">
+                <AvatarFallback className="bg-primary/10 text-primary font-bold text-sm">
+                  {t.name.split(" ").map((n) => n[0]).join("")}
+                </AvatarFallback>
+              </Avatar>
+              <div>
+                <div className="font-medium text-sm">{t.name}</div>
+                <div className="text-xs text-muted-foreground">{t.role}</div>
+              </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
