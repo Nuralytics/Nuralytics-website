@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import GreenImageSection from "@/components/GreenImageSection";
 import LiveDashboardSection from "@/components/LiveDashboardSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import MarqueeSection from "@/components/MarqueeSection";
@@ -17,6 +18,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navigation />
       <HeroSection />
+      <GreenImageSection />
       <LiveDashboardSection />
       <LogoCarousel />
       <MarqueeSection />

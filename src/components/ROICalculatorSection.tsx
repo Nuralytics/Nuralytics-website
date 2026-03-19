@@ -8,6 +8,24 @@ const ROICalculatorSection = () => {
     const [monthlyCost, setMonthlyCost] = useState(50000);
     const [savings, setSavings] = useState(0);
 
+    const formatShort = (value: number) => {
+        if (value >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M`;
+        return `${Math.round(value / 1000)}k`;
+    };
+
+    const breakdown = [
+        { label: "Ops Automation", percent: 0.32, colors: "from-emerald-400 to-emerald-500" },
+        { label: "Support Deflection", percent: 0.26, colors: "from-teal-400 to-emerald-400" },
+        { label: "Analytics Efficiency", percent: 0.18, colors: "from-sky-400 to-teal-400" },
+        { label: "AI Co-pilot Uplift", percent: 0.24, colors: "from-lime-400 to-emerald-500" }
+    ];
+
+    const adoptionTrend = [62, 68, 70, 74, 78, 82, 85];
+    const monthlySavings = monthlyCost * 0.35;
+    const paybackMonths = Math.max(1, Math.round(monthlyCost / monthlySavings));
+    const adoptionScore = adoptionTrend[adoptionTrend.length - 1];
+    const efficiencyLift = 35;
+
     // Simple ROI estimation logic
     useEffect(() => {
         // 35% estimated efficiency savings across the team
@@ -19,6 +37,13 @@ const ROICalculatorSection = () => {
         <section className="py-24 relative overflow-hidden bg-background">
             {/* Background glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none" />
+
+            {/* Brand mark */}
+            <img
+                src="/brand-assets/Firefly.png"
+                alt="Firefly brand mark"
+                className="absolute right-6 top-6 w-20 md:w-24 drop-shadow-[0_10px_30px_rgba(0,0,0,0.35)] opacity-100 pointer-events-none z-20"
+            />
 
             <div className="container px-4">
                 <motion.div
@@ -112,6 +137,18 @@ const ROICalculatorSection = () => {
                         <div className="rounded-2xl p-8 flex flex-col items-center justify-center relative z-10"
                             style={{ background: "rgba(16,185,129,0.05)", border: "1px solid rgba(16,185,129,0.15)" }}>
 
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(52,211,153,0.12),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(125,211,252,0.08),transparent_40%)] pointer-events-none" />
+
+                            <div className="w-full flex items-center justify-between mb-6 text-xs text-white/60">
+                                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/5">Savings Outlook</span>
+                                <div className="flex items-center gap-3">
+                                    <span className="flex items-center gap-1 px-2 py-1 rounded-full bg-emerald-500/10 text-emerald-200 border border-emerald-500/20 font-medium">
+                                        <TrendingUp className="w-3 h-3" /> +{efficiencyLift}% lift
+                                    </span>
+                                    <span className="px-2 py-1 rounded-full bg-white/5 border border-white/5 text-white/70">Payback ~ {paybackMonths} mo</span>
+                                </div>
+                            </div>
+
                             <div className="relative w-56 h-56 flex items-center justify-center">
                                 {/* Background ring */}
                                 <svg className="absolute inset-0 w-full h-full -rotate-90">
@@ -146,15 +183,72 @@ const ROICalculatorSection = () => {
                                         animate={{ opacity: 1, scale: 1 }}
                                         className="text-4xl font-bold text-white font-display"
                                     >
-                                        ${savings >= 1000000
-                                            ? (savings / 1000000).toFixed(1) + 'M'
-                                            : (savings / 1000).toFixed(0) + 'k'}
+                                        ${formatShort(savings)}
                                     </motion.div>
                                 </div>
                             </div>
 
-                            <div className="mt-8 text-center text-xs text-white/40 border-t border-white/5 pt-4 w-full leading-relaxed">
-                                Predictions based on 35% average workflow optimization across our top enterprise AI integrations.
+                            <div className="grid grid-cols-3 gap-3 text-center text-[11px] text-white/60 mt-6 w-full">
+                                <div className="rounded-xl bg-white/5 border border-white/5 py-3">
+                                    <div className="text-white font-semibold text-sm">${formatShort(monthlySavings)}</div>
+                                    <div>Monthly impact</div>
+                                </div>
+                                <div className="rounded-xl bg-white/5 border border-white/5 py-3">
+                                    <div className="text-white font-semibold text-sm">{adoptionScore}%</div>
+                                    <div>Adoption score</div>
+                                </div>
+                                <div className="rounded-xl bg-white/5 border border-white/5 py-3">
+                                    <div className="text-white font-semibold text-sm">{efficiencyLift}%</div>
+                                    <div>Workflow optimized</div>
+                                </div>
+                            </div>
+
+                            <div className="w-full mt-6 space-y-3">
+                                {breakdown.map((item) => {
+                                    const amount = savings * item.percent;
+                                    return (
+                                        <div key={item.label} className="space-y-1">
+                                            <div className="flex justify-between text-xs text-white/60">
+                                                <span>{item.label}</span>
+                                                <span className="text-white font-semibold">${formatShort(amount)}</span>
+                                            </div>
+                                            <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+                                                <div
+                                                    className={`h-full bg-gradient-to-r ${item.colors}`}
+                                                    style={{ width: `${item.percent * 100}%` }}
+                                                />
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+
+                            <div className="w-full mt-6 rounded-xl bg-black/20 border border-white/5 p-4">
+                                <div className="flex items-center justify-between text-xs text-white/60 mb-3">
+                                    <span>Adoption velocity</span>
+                                    <span className="text-white font-semibold">Last 6 mo ↑</span>
+                                </div>
+                                <div className="flex items-end gap-2 h-16">
+                                    {adoptionTrend.map((value, idx) => {
+                                        const height = (value / 100) * 100;
+                                        return (
+                                            <div key={idx} className="flex-1 rounded-md bg-white/8 overflow-hidden">
+                                                <div
+                                                    className="w-full bg-gradient-to-t from-emerald-500 to-teal-400"
+                                                    style={{ height: `${height}%` }}
+                                                />
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="text-[11px] text-white/50 mt-2 flex justify-between">
+                                    <span>Stable rollout across teams</span>
+                                    <span className="text-emerald-300 font-semibold">{adoptionScore}%</span>
+                                </div>
+                            </div>
+
+                            <div className="mt-5 text-center text-xs text-white/40 border-t border-white/5 pt-4 w-full leading-relaxed">
+                                Predictions blend 35% average workflow optimization and adoption velocity across our top enterprise AI integrations.
                             </div>
                         </div>
 
