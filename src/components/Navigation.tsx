@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Menu, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,7 +61,6 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <ThemeToggle />
             <Button
               size="sm"
               className="button-gradient arrow-hover px-5 text-sm font-medium"
@@ -75,7 +73,6 @@ const Navigation = () => {
 
           {/* Mobile */}
           <div className="lg:hidden flex items-center gap-2">
-            <ThemeToggle />
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full">

@@ -54,7 +54,7 @@ const projects = [
 
 const PortfolioSection = () => {
   return (
-    <section id="portfolio" className="py-28 relative overflow-hidden">
+    <section id="portfolio" className="py-28 relative overflow-hidden bg-[#070e0a]">
       {/* Ambient glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px]"
@@ -70,12 +70,12 @@ const PortfolioSection = () => {
           className="text-center mb-16"
         >
           <span className="section-badge mb-6">Our Work</span>
-          <h2 className="text-4xl md:text-6xl font-bold mt-6 tracking-tight font-display">
+          <h2 className="text-4xl md:text-6xl font-bold mt-6 tracking-tight font-display text-white">
             Shipped.{" "}
             <span className="text-gradient">Scaled.</span>
             {" "}Proven.
           </h2>
-          <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
+          <p className="text-white/60 text-lg mt-4 max-w-2xl mx-auto">
             Six projects. Measurable outcomes. Each one built from scratch to solve a real business problem.
           </p>
         </motion.div>
@@ -131,10 +131,10 @@ const PortfolioSection = () => {
 
               {/* Card body */}
               <div className="p-6">
-                <h3 className="text-lg font-bold font-display mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg font-bold font-display mb-2 text-white group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                <p className="text-white/60 text-sm leading-relaxed mb-4">
                   {project.description}
                 </p>
 

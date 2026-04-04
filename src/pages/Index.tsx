@@ -1,11 +1,13 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import GreenImageSection from "@/components/GreenImageSection";
 import LiveDashboardSection from "@/components/LiveDashboardSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import MarqueeSection from "@/components/MarqueeSection";
+import ExpertiseSection from "@/components/ExpertiseSection";
 import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
-import ROICalculatorSection from "@/components/ROICalculatorSection";
+
 import PortfolioSection from "@/components/PortfolioSection";
 import SuccessMetricsSection from "@/components/SuccessMetricsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -18,11 +20,13 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <LiveDashboardSection />
+      <GreenImageSection />
       <LogoCarousel />
       <MarqueeSection />
+      <ExpertiseSection />
       <ServicesSection />
       <AboutSection />
-      <ROICalculatorSection />
+
       <PortfolioSection />
       <SuccessMetricsSection />
       <TestimonialsSection />

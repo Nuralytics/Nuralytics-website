@@ -56,11 +56,11 @@ const metrics = [
 
 const SuccessMetricsSection = () => {
     return (
-        <section className="py-28 relative overflow-hidden">
+        <section className="py-28 relative overflow-hidden bg-white">
             {/* Background */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px]"
-                    style={{ background: "radial-gradient(ellipse at center, rgba(16,185,129,0.05) 0%, transparent 70%)" }} />
+                    style={{ background: "radial-gradient(ellipse at center, rgba(16,185,129,0.15) 0%, transparent 70%)" }} />
             </div>
 
             <div className="container px-4 relative">
@@ -93,35 +93,20 @@ const SuccessMetricsSection = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                                className={`relative group rounded-3xl p-8 overflow-hidden transition-all duration-500 cursor-default ${item.colSpan}`}
-                                style={{
-                                    background: "rgba(255,255,255,0.025)",
-                                    border: "1px solid rgba(255,255,255,0.08)",
-                                }}
-                                whileHover={{ borderColor: "rgba(16,185,129,0.3)", y: -4 } as any}
+                                className={`relative group rounded-3xl p-8 overflow-hidden transition-all duration-500 cursor-default bg-white border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-1 ${item.colSpan}`}
                             >
                                 {/* Gradient glow on hover */}
-                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-3xl"
-                                    style={{ background: "radial-gradient(ellipse at top-left, rgba(16,185,129,0.08) 0%, transparent 70%)" }} />
+                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-3xl bg-emerald-50/50" />
 
                                 {/* Emerald gradient border top line */}
-                                <div className="absolute top-0 left-8 right-8 h-px"
-                                    style={{ background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.4), transparent)", opacity: 0 }}
-                                    ref={el => {
-                                        if (el) el.style.opacity = "1";
-                                    }} />
-
-                                {/* Border top glow line */}
-                                <div className="absolute top-0 left-8 right-8 h-px opacity-40"
-                                    style={{ background: "linear-gradient(90deg, transparent, rgba(16,185,129,0.5), transparent)" }} />
+                                <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                 {/* Header row */}
                                 <div className="flex items-start justify-between mb-10 relative">
-                                    <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-                                        style={{ background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.2)" }}>
-                                        <Icon className="w-5 h-5 text-emerald-400" />
+                                    <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-emerald-50 border border-emerald-100">
+                                        <Icon className="w-5 h-5 text-emerald-600" />
                                     </div>
-                                    <span className="text-xs font-mono text-white/25 uppercase tracking-widest">
+                                    <span className="text-xs font-mono text-gray-400 uppercase tracking-widest">
                                         {item.title}
                                     </span>
                                 </div>
@@ -129,19 +114,17 @@ const SuccessMetricsSection = () => {
                                 {/* Big metric number */}
                                 <div className="relative mb-3">
                                     <div
-                                        className={`font-bold font-mono leading-none ${item.large ? "text-5xl md:text-6xl" : "text-4xl md:text-5xl"} group-hover:text-emerald-400 transition-colors duration-500`}
-                                        style={{ color: "rgba(255,255,255,0.9)" }}
+                                        className={`font-bold font-mono leading-none ${item.large ? "text-5xl md:text-6xl" : "text-4xl md:text-5xl"} text-gray-900 group-hover:text-emerald-600 transition-colors duration-500`}
                                     >
                                         {item.highlight}
                                     </div>
-                                    <div className="text-sm font-medium mt-1.5"
-                                        style={{ color: "rgba(52,211,153,0.8)" }}>
+                                    <div className="text-sm font-medium mt-1.5 text-emerald-600">
                                         {item.unit}
                                     </div>
                                 </div>
 
                                 {/* Description */}
-                                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.45)" }}>
+                                <p className="text-sm leading-relaxed text-gray-600">
                                     {item.desc}
                                 </p>
                             </motion.div>
