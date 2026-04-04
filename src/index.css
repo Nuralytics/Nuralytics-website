@@ -30,27 +30,6 @@
     --radius: 0.75rem;
   }
 
-  .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 160 84% 39%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 10%;
-    --muted-foreground: 0 0% 55%;
-    --accent: 0 0% 10%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 12%;
-    --input: 0 0% 12%;
-    --ring: 160 84% 39%;
-  }
 }
 
 @layer base {
@@ -104,10 +83,7 @@
   border: 1px solid hsla(var(--border), 0.5);
 }
 
-.dark .glass-nav {
-  background: hsla(0, 0%, 6%, 0.85);
-  border: 1px solid hsla(0, 0%, 15%, 0.6);
-}
+
 
 /* ===== SECTION BADGE (pill tag) ===== */
 .section-badge {
@@ -231,9 +207,7 @@
   user-select: none;
 }
 
-.dark .footer-brand-text {
-  color: hsl(var(--primary) / 0.08);
-}
+
 
 /* ===== QUOTE ICON ===== */
 .quote-icon {

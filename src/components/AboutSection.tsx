@@ -9,9 +9,9 @@ const stats = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative bg-background overflow-hidden pb-24">
+    <section id="about" className="relative bg-white overflow-hidden pb-24">
       {/* Dark gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-black/50 to-background pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50/30 to-white pointer-events-none" />
 
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -21,8 +21,8 @@ const AboutSection = () => {
         }} />
 
       {/* Pulsing highlights */}
-      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-emerald-100/50 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-emerald-100/50 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="container px-4 py-28 relative">
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -87,20 +87,19 @@ const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                className="relative p-8 rounded-[32px] border border-white/5 text-center group transition-all duration-500"
+                className="relative p-8 rounded-[32px] border border-gray-100 text-center group transition-all duration-500 bg-white hover:-translate-y-1"
                 style={{
-                  background: "linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)",
-                  boxShadow: "0 20px 50px -20px rgba(0,0,0,0.5)"
+                  boxShadow: "0 20px 40px -10px rgba(0,0,0,0.12)"
                 }}
               >
                 {/* Pulsing border on hover */}
-                <div className="absolute inset-0 rounded-[32px] border border-emerald-500/0 group-hover:border-emerald-500/20 group-hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-500" />
+                <div className="absolute inset-0 rounded-[32px] border border-emerald-500/0 group-hover:border-emerald-200 group-hover:shadow-[0_0_30px_rgba(16,185,129,0.2)] transition-all duration-500" />
                 
-                <div className="text-emerald-500/60 text-2xl mb-4 group-hover:scale-110 transition-transform duration-500">{stat.icon}</div>
-                <div className="text-4xl md:text-5xl font-bold font-display mb-2 text-white group-hover:text-emerald-400 transition-colors">
+                <div className="text-emerald-600 text-2xl mb-4 group-hover:scale-110 transition-transform duration-500">{stat.icon}</div>
+                <div className="text-4xl md:text-5xl font-bold font-display mb-2 text-gray-900 group-hover:text-emerald-600 transition-colors">
                   {stat.value}
                 </div>
-                <div className="text-[10px] text-white/30 uppercase tracking-[0.2em] font-bold">
+                <div className="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-bold">
                   {stat.label}
                 </div>
               </motion.div>
