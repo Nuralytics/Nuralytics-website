@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "800+", label: "Projects Completed", icon: "◆" },
-  { value: "46%", label: "Avg Revenue Growth", icon: "◉" },
-  { value: "200+", label: "Happy Clients", icon: "★" },
-  { value: "5+", label: "Years Experience", icon: "⬡" },
+  { value: "100%", label: "Custom Architecture", icon: "01" },
+  { value: "Autonomous", label: "AI Powered Systems", icon: "02" },
+  { value: "Analytics Driven", label: "Data-First Approach", icon: "03" },
+  { value: "Integration", label: "Seamless Integration", icon: "04" },
+  { value: "1:1", label: "Dedicated Partnership", icon: "05" },
 ];
 
 const AboutSection = () => {
@@ -52,13 +53,13 @@ const AboutSection = () => {
               Actually Needs
             </h2>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed max-w-lg">
-              We help businesses eliminate manual work and increase revenue with
-              custom-built software, AI automation, and conversion systems. Every
-              project is built from scratch — no shortcuts, no templates.
+              As a forward-thinking technology partner, we focus on helping ambitious businesses eliminate manual work and embrace seamless digital transformation. Our expertise spans custom-built software, intelligent AI automation, and high-performance technical architecture.
+            </p>
+            <p className="text-muted-foreground mb-6 leading-relaxed max-w-lg">
+              We engineer fully autonomous systems that integrate flawlessly with your existing platform stack—bridging CRMs, specialized tools, and external APIs into one unified engine. Everything we deploy is fortified by strict security standards and industry compliance to keep your firm's data protected at scale.
             </p>
             <p className="text-muted-foreground mb-10 leading-relaxed max-w-lg">
-              Our clients typically save 10–30 hours per week and see measurable
-              revenue growth within the first 30 days of launch.
+              We believe in quality over volume. Every project is meticulously hand-crafted from the ground up — zero recycled templates, no generic shortcuts. We dedicate our full attention to understanding your unique operational bottlenecks and building targeted, scalable solutions.
             </p>
             <motion.div 
                whileInView={{ scale: [0.98, 1] }}
@@ -66,8 +67,7 @@ const AboutSection = () => {
                className="border-l-4 border-emerald-500/30 pl-6 py-3 bg-emerald-500/[0.02] rounded-r-xl"
             >
               <p className="text-foreground font-medium text-lg leading-relaxed">
-                We stay accountable until your system delivers results — not just
-                until delivery.
+                We consider ourselves your dedicated technical partners from Day 1, ensuring zero compromises on quality, performance, and impact.
               </p>
             </motion.div>
           </motion.div>
@@ -77,30 +77,45 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid grid-cols-2 gap-6"
+            className="flex flex-col gap-5 py-4"
           >
             {stats.map((stat, i) => (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.6 }}
-                whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                className="relative p-8 rounded-[32px] border border-gray-100 text-center group transition-all duration-500 bg-white hover:-translate-y-1"
-                style={{
-                  boxShadow: "0 20px 40px -10px rgba(0,0,0,0.12)"
-                }}
+                transition={{ delay: i * 0.15, duration: 0.6 }}
+                whileHover={{ x: 10, scale: 1.02 }}
+                className={`relative flex items-center gap-5 p-5 rounded-2xl bg-white border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] group transition-all duration-300 w-[92%] hover:shadow-[0_20px_40px_rgba(16,185,129,0.12)] hover:border-emerald-300 ${i % 2 !== 0 ? 'ml-auto' : ''}`}
+                style={{ zIndex: 10 - i }}
               >
-                {/* Pulsing border on hover */}
-                <div className="absolute inset-0 rounded-[32px] border border-emerald-500/0 group-hover:border-emerald-200 group-hover:shadow-[0_0_30px_rgba(16,185,129,0.2)] transition-all duration-500" />
-                
-                <div className="text-emerald-600 text-2xl mb-4 group-hover:scale-110 transition-transform duration-500">{stat.icon}</div>
-                <div className="text-4xl md:text-5xl font-bold font-display mb-2 text-gray-900 group-hover:text-emerald-600 transition-colors">
-                  {stat.value}
+                {/* Glowing Node Box */}
+                <div className="relative flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-50 to-emerald-100/50 flex items-center justify-center border border-emerald-200/50 group-hover:from-emerald-500 group-hover:to-emerald-600 group-hover:border-emerald-400 transition-all duration-500 overflow-hidden shadow-sm group-hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]">
+                  <span className="text-emerald-700 group-hover:text-white transition-colors duration-500 text-lg font-bold font-display z-10">
+                    {stat.icon}
+                  </span>
                 </div>
-                <div className="text-[10px] text-gray-500 uppercase tracking-[0.2em] font-bold">
-                  {stat.label}
+                
+                <div className="flex flex-col">
+                  <div className="text-2xl md:text-3xl font-bold font-display text-gray-900 group-hover:text-emerald-600 transition-colors duration-300">
+                    {stat.value}
+                  </div>
+                  <div className="text-xs md:text-sm text-gray-500 uppercase tracking-[0.15em] font-semibold mt-1">
+                    {stat.label}
+                  </div>
+                </div>
+
+                {/* Decorative Tech Graphic on right */}
+                <div className="ml-auto w-12 h-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex gap-1 items-end justify-end">
+                  {[...Array(4)].map((_, idx) => (
+                    <motion.div 
+                      key={idx}
+                      animate={{ height: ["20%", "100%", "40%", "80%", "20%"] }}
+                      transition={{ duration: 1.5, repeat: Infinity, delay: idx * 0.2 }}
+                      className="w-1.5 bg-emerald-500 rounded-t-sm"
+                    />
+                  ))}
                 </div>
               </motion.div>
             ))}

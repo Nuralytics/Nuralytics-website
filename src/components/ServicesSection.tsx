@@ -97,24 +97,24 @@ const ServicesSection = () => {
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section ref={containerRef} id="services" className="bg-[#050907] relative py-32 border-y border-white/5 overflow-hidden">
+    <section ref={containerRef} id="services" className="bg-[#050907] relative py-5 border-y border-white/5 overflow-hidden">
       {/* Dynamic Background Trace */}
       <div className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-full max-w-7xl hidden lg:block opacity-30 pointer-events-none">
         <svg viewBox="0 0 100 1000" className="w-full h-full preserve-3d" preserveAspectRatio="none">
-           <motion.path 
-              d="M50 0 L50 200 C50 250 80 250 80 300 C80 350 50 350 50 400 L50 600 C50 650 20 650 20 700 C20 750 50 750 50 800 L50 1000" 
-              stroke="url(#emerald-gradient)" 
-              strokeWidth="0.5" 
-              fill="none" 
-              style={{ pathLength }}
-           />
-           <defs>
-             <linearGradient id="emerald-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-               <stop offset="0%" stopColor="#10b981" stopOpacity="0" />
-               <stop offset="50%" stopColor="#10b981" stopOpacity="1" />
-               <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
-             </linearGradient>
-           </defs>
+          <motion.path
+            d="M50 0 L50 200 C50 250 80 250 80 300 C80 350 50 350 50 400 L50 600 C50 650 20 650 20 700 C20 750 50 750 50 800 L50 1000"
+            stroke="url(#emerald-gradient)"
+            strokeWidth="0.5"
+            fill="none"
+            style={{ pathLength }}
+          />
+          <defs>
+            <linearGradient id="emerald-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#10b981" stopOpacity="0" />
+              <stop offset="50%" stopColor="#10b981" stopOpacity="1" />
+              <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
+            </linearGradient>
+          </defs>
         </svg>
       </div>
 
@@ -142,15 +142,15 @@ const ServicesSection = () => {
         </motion.div>
       </div>
 
-      <div className="container px-4 space-y-40 md:space-y-64 relative z-10 mt-16 mt-0">
+      <div className="container px-4 space-y-24 md:space-y-32 relative z-10 mt-16">
         {servicesData.map((service, idx) => {
           const isTextLeft = service.align === "left";
           const isEven = idx % 2 === 0;
 
           return (
             <div key={service.number} className="relative w-full group">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center">
-                
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
                 {/* ---------------- TEXT CONTENT ---------------- */}
                 <motion.div
                   initial={{ opacity: 0, x: isTextLeft ? -60 : 60 }}
@@ -193,7 +193,7 @@ const ServicesSection = () => {
 
                   <Button size="lg" className="button-gradient rounded-full px-10 h-14 text-base shadow-[0_0_40px_rgba(16,185,129,0.2)] hover:shadow-[0_0_60px_rgba(16,185,129,0.4)] transition-all duration-500 overflow-hidden relative group/btn">
                     <span className="relative z-10 flex items-center">
-                        Initiate Sequence <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover/btn:translate-x-2" />
+                      Initiate Sequence <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover/btn:translate-x-2" />
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-emerald-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500 ease-out" />
                   </Button>
@@ -208,7 +208,7 @@ const ServicesSection = () => {
                   className={`${isTextLeft ? "lg:order-2" : "lg:order-1"} relative perspective-[1200px] h-full min-h-[400px] flex items-center justify-center`}
                 >
                   <div className="relative w-full max-w-[400px] aspect-square flex items-center justify-center mt-10 lg:mt-0">
-                    
+
                     {/* Core Core Glow */}
                     <motion.div
                       animate={{ opacity: [0.3, 0.6, 0.3], scale: [0.8, 1.2, 0.8] }}
@@ -219,34 +219,34 @@ const ServicesSection = () => {
                     {/* 3D Atomic Orbital Rings */}
                     <div className="absolute inset-[-60px] pointer-events-none flex items-center justify-center [transform-style:preserve-3d]">
                       {/* Orbital 1 */}
-                      <motion.div 
-                          style={{ rotateX: 65, rotateY: isEven ? 25 : -25 }}
-                          animate={{ rotateZ: 360 }}
-                          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                          className="absolute w-full h-full border-[1px] border-solid border-emerald-500/30 rounded-full shadow-[0_0_15px_rgba(16,185,129,0.2)]"
+                      <motion.div
+                        style={{ rotateX: 65, rotateY: isEven ? 25 : -25 }}
+                        animate={{ rotateZ: 360 }}
+                        transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                        className="absolute w-full h-full border-[1px] border-solid border-emerald-500/30 rounded-full shadow-[0_0_15px_rgba(16,185,129,0.2)]"
                       />
                       {/* Orbital 2 */}
-                      <motion.div 
-                          style={{ rotateX: 65, rotateY: isEven ? -45 : 45 }}
-                          animate={{ rotateZ: -360 }}
-                          transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
-                          className="absolute w-[110%] h-[110%] border-[2px] border-dashed border-teal-500/20 rounded-full"
+                      <motion.div
+                        style={{ rotateX: 65, rotateY: isEven ? -45 : 45 }}
+                        animate={{ rotateZ: -360 }}
+                        transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
+                        className="absolute w-[110%] h-[110%] border-[2px] border-dashed border-teal-500/20 rounded-full"
                       />
                       {/* Orbital 3 */}
-                      <motion.div 
-                          style={{ rotateX: 75, rotateY: isEven ? 10 : -10 }}
-                          animate={{ rotateZ: 360 }}
-                          transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-                          className="absolute w-[120%] h-[120%] border-[1px] border-dotted border-emerald-300/40 rounded-full"
+                      <motion.div
+                        style={{ rotateX: 75, rotateY: isEven ? 10 : -10 }}
+                        animate={{ rotateZ: 360 }}
+                        transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
+                        className="absolute w-[120%] h-[120%] border-[1px] border-dotted border-emerald-300/40 rounded-full"
                       />
                     </div>
 
                     {/* Highly Creative Liquid Morphing Orb */}
                     <motion.div
-                      animate={{ 
+                      animate={{
                         borderRadius: [
-                          "40% 60% 70% 30% / 40% 50% 60% 50%", 
-                          "60% 40% 30% 70% / 60% 30% 70% 40%", 
+                          "40% 60% 70% 30% / 40% 50% 60% 50%",
+                          "60% 40% 30% 70% / 60% 30% 70% 40%",
                           "30% 70% 50% 50% / 50% 40% 60% 50%",
                           "40% 60% 70% 30% / 40% 50% 60% 50%"
                         ],
@@ -269,17 +269,17 @@ const ServicesSection = () => {
                     <motion.div
                       animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
                       transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: idx * 0.3 }}
-                      className="absolute -bottom-6 sm:-bottom-10 right-0 sm:-right-10 z-20 glass px-6 py-4 rounded-2xl border border-emerald-500/30 shadow-[0_20px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl bg-black/60"
+                      className="absolute -bottom-6 sm:-bottom-10 right-0 sm:-right-10 z-20 glass px-6 py-4 rounded-2xl border border-emerald-500/40 shadow-[0_20px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl bg-emerald-950/80"
                     >
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/30 to-emerald-900/40 flex items-center justify-center border border-emerald-500/30 shadow-[inset_0_0_10px_rgba(16,185,129,0.5)]">
                           <service.badgeIcon className="w-6 h-6 text-emerald-400 drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
                         </div>
                         <div>
-                          <div className="text-[10px] text-emerald-400/70 font-mono uppercase tracking-widest mb-1 flex items-center gap-1.5">
-                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" /> Live Status
+                          <div className="text-[10px] text-emerald-300 font-bold font-mono uppercase tracking-widest mb-1 flex items-center gap-1.5 drop-shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_5px_#34d399]" /> Live Status
                           </div>
-                          <div className="text-sm font-bold text-white tracking-wide">{service.badgeText}</div>
+                          <div className="text-sm font-bold text-white tracking-wide drop-shadow-md">{service.badgeText}</div>
                         </div>
                       </div>
                     </motion.div>
