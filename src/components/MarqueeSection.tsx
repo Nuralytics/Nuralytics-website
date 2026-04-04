@@ -23,7 +23,7 @@ const MarqueeSection = () => {
     const extendedLogos = [...logos, ...logos, ...logos];
 
     return (
-        <div className="relative py-10 overflow-hidden bg-[#070e0a]">
+        <div className="relative py-5 mb-10 overflow-hidden bg-[#070e0a]">
             {/* Top and bottom subtle borders */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
