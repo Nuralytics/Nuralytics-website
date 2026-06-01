@@ -35,23 +35,23 @@ const Navigation = () => {
       >
         <nav
           className={`flex items-center justify-between h-14 px-6 rounded-full transition-all duration-500 ${isScrolled
-              ? "glass-nav shadow-lg shadow-black/5"
-              : "glass-nav"
+              ? "bg-black/55 backdrop-blur-xl border border-white/15 shadow-lg shadow-black/30"
+              : "bg-black/35 backdrop-blur-xl border border-white/10"
             }`}
         >
           {/* Brand */}
-          <span className="font-bold text-xl text-primary font-display tracking-tight">
+          <span className="font-bold text-xl text-white font-display tracking-tight">
             Nuralytics
           </span>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center">
-            <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-card/50 border border-border/30">
+            <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollTo(item.id)}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors px-3 py-1.5 rounded-full hover:bg-card/80"
+                  className="text-sm text-white/75 hover:text-white transition-colors px-3 py-1.5 rounded-full hover:bg-white/10"
                 >
                   {item.name}
                 </button>
@@ -75,7 +75,7 @@ const Navigation = () => {
           <div className="lg:hidden flex items-center gap-2">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="rounded-full">
+                <Button variant="ghost" size="icon" className="rounded-full text-white hover:bg-white/10 hover:text-white">
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>

@@ -81,7 +81,7 @@ const HeroSection = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="mt-10 max-w-2xl text-lg md:text-[1.35rem] leading-relaxed text-white/60"
             >
-              We design and ship dashboard analytics, voice agents, agentic workflows, and AI-ready websites that reduce manual effort and turn operations into measurable growth.
+              We design and ship data analysis systems, voice agents, agentic workflows, and AI-ready websites that reduce manual effort and turn operations into measurable growth.
             </motion.p>
 
             <motion.div
@@ -133,7 +133,7 @@ const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="button-outline-green text-lg px-8 h-14 font-medium bg-transparent"
+                className="text-lg px-8 h-14 font-medium rounded-full border-2 border-white/45 text-white bg-white/5 hover:bg-white/12 hover:border-white/70"
                 onClick={() => scrollTo("portfolio")}
               >
                 View Our Work

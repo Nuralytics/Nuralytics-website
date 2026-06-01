@@ -4,7 +4,6 @@ import GreenImageSection from "@/components/GreenImageSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import MarqueeSection from "@/components/MarqueeSection";
 import ExpertiseSection from "@/components/ExpertiseSection";
-import ServicesSection from "@/components/ServicesSection";
 import AboutSection from "@/components/AboutSection";
 
 import PortfolioSection from "@/components/PortfolioSection";
@@ -22,7 +21,6 @@ const Index = () => {
       <LogoCarousel />
       <ExpertiseSection />
       <MarqueeSection />
-      <ServicesSection />
       <AboutSection />
 
       <PortfolioSection />
