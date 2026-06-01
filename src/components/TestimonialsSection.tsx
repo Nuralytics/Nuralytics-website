@@ -15,7 +15,7 @@ const testimonials = [
   {
     name: "Emily Chen",
     role: "CTO, Growthly",
-    content: "Our custom dashboard went from concept to production in 3 weeks. Clean code, great communication, and zero issues post-launch.",
+    content: "Our custom analytics platform went from concept to production in 3 weeks. Clean code, great communication, and zero issues post-launch.",
   },
 ];
 

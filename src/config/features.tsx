@@ -9,7 +9,7 @@ export const features = [
   },
   {
     title: "Portfolio Management",
-    description: "Track your investments and monitor your gains with our comprehensive portfolio dashboard.",
+    description: "Track your investments and monitor gains with a unified portfolio management experience.",
     icon: <Wallet className="w-6 h-6" />,
     image: "/lovable-uploads/7335619d-58a9-41ad-a233-f7826f56f3e9.png"
   },
