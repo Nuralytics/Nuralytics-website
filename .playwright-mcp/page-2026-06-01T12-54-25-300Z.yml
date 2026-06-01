@@ -1,0 +1,579 @@
+- generic [ref=e3]:
+  - region "Notifications (F8)":
+    - list
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - navigation [ref=e7]:
+        - generic [ref=e8]: Nuralytics
+        - generic [ref=e10]:
+          - button "Home" [ref=e11] [cursor=pointer]
+          - button "Services" [ref=e12] [cursor=pointer]
+          - button "About" [ref=e13] [cursor=pointer]
+          - button "Work" [ref=e14] [cursor=pointer]
+          - button "Testimonials" [ref=e15] [cursor=pointer]
+          - button "Contact" [ref=e16] [cursor=pointer]
+        - button "Get a Free Consultation" [ref=e18] [cursor=pointer]:
+          - text: Get a Free Consultation
+          - img [ref=e19]
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e26]: Intelligence. Creativity. Momentum.
+        - heading "Transform the Way Your Business Thinks" [level=1] [ref=e27]:
+          - text: Transform the
+          - text: Way Your Business
+          - text: Thinks
+        - paragraph [ref=e28]: Our team transforms complex ideas into clear digital systems - powered by web design, frontend delivery, AI-driven workflows, and voice automation that helps companies scale with speed and control.
+        - generic [ref=e29]:
+          - button "Get a Free Consultation" [ref=e30] [cursor=pointer]:
+            - text: Get a Free Consultation
+            - img [ref=e31]
+          - button "View Our Work" [ref=e33] [cursor=pointer]
+      - img "Rotating dot ring" [ref=e38]
+    - generic [ref=e47]:
+      - heading "THINK. DEVELOP. TRANSFORM." [level=2] [ref=e48]:
+        - text: THINK.
+        - text: DEVELOP.
+        - text: TRANSFORM.
+      - paragraph [ref=e49]: We work with ambitious teams to uncover opportunities, refine operations, and drive sustainable success.
+      - button "About us" [ref=e50] [cursor=pointer]:
+        - text: About us
+        - img [ref=e52]
+    - generic [ref=e62]:
+      - img "Partner logo 1"
+      - img "Partner logo 2" [ref=e63]
+      - img "Partner logo 3" [ref=e64]
+      - img "Partner logo 4" [ref=e65]
+      - img "Partner logo 5"
+      - img "Partner logo 6"
+      - img "Partner logo 7" [ref=e66]
+      - img "Partner logo 8" [ref=e67]
+      - img "Partner logo 9" [ref=e68]
+      - img "Partner logo 10"
+      - img "Partner logo 11"
+      - img "Partner logo 12" [ref=e69]
+      - img "Partner logo 13" [ref=e70]
+      - img "Partner logo 14" [ref=e71]
+      - img "Partner logo 15"
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]: Core Competencies
+        - heading "Everything You Need To Scale" [level=2] [ref=e76]
+        - paragraph [ref=e77]: We merge cutting-edge technology with premium design to accelerate your growth.
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - img [ref=e87]
+          - generic [ref=e99]:
+            - button "Go to slide 1" [ref=e100] [cursor=pointer]
+            - button "Go to slide 2" [ref=e101] [cursor=pointer]
+            - button "Go to slide 3" [ref=e102] [cursor=pointer]
+            - button "Go to slide 4" [ref=e103] [cursor=pointer]
+        - generic [ref=e104]:
+          - generic [ref=e106] [cursor=pointer]:
+            - img [ref=e108]
+            - generic [ref=e120]:
+              - heading "Artificial Intelligence" [level=3] [ref=e121]
+              - paragraph [ref=e123]: Deploy custom ML models, intelligent agents, and scalable automation systems that forecast trends and transform your business operations.
+          - generic [ref=e125] [cursor=pointer]:
+            - img [ref=e127]
+            - heading "Premium Web Platforms" [level=3] [ref=e131]
+          - generic [ref=e133] [cursor=pointer]:
+            - img [ref=e135]
+            - heading "Custom Software" [level=3] [ref=e140]
+          - generic [ref=e142] [cursor=pointer]:
+            - img [ref=e144]
+            - heading "Expert Consultation" [level=3] [ref=e148]
+    - generic [ref=e153]:
+      - generic [ref=e155]: Python
+      - generic [ref=e157]: TensorFlow
+      - generic [ref=e159]: Next.js
+      - generic [ref=e161]: React
+      - generic [ref=e163]: OpenAI
+      - generic [ref=e165]: LangChain
+      - generic [ref=e167]: PostgreSQL
+      - generic [ref=e169]: Stripe
+      - generic [ref=e171]: Python
+      - generic [ref=e173]: TensorFlow
+      - generic [ref=e175]: Next.js
+      - generic [ref=e177]: React
+      - generic [ref=e179]: OpenAI
+      - generic [ref=e181]: LangChain
+      - generic [ref=e183]: PostgreSQL
+      - generic [ref=e185]: Stripe
+      - generic [ref=e187]: Python
+      - generic [ref=e189]: TensorFlow
+      - generic [ref=e191]: Next.js
+      - generic [ref=e193]: React
+      - generic [ref=e195]: OpenAI
+      - generic [ref=e197]: LangChain
+      - generic [ref=e199]: PostgreSQL
+      - generic [ref=e201]: Stripe
+    - generic [ref=e202]:
+      - generic:
+        - img
+      - generic [ref=e205]:
+        - generic [ref=e206]:
+          - img [ref=e207]
+          - text: Next-Gen Capabilities
+        - heading "Intelligent Solutions, Real Results" [level=2] [ref=e209]
+        - paragraph [ref=e210]: Five core neural pillars, engineered concurrently to eliminate bottlenecks, cut costs, and unleash unprecedented scaling potential.
+      - generic [ref=e211]:
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - generic [ref=e216]: "01"
+            - heading "AI Consulting & Strategy" [level=3] [ref=e218]
+            - paragraph [ref=e219]: Navigate the AI landscape with expert guidance. We build custom strategic roadmaps that identify high-ROI opportunities and ensure seamless integration with your existing ecosystems.
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - img [ref=e223]
+                - generic [ref=e226]: Strategic AI Roadmapping
+              - generic [ref=e227]:
+                - img [ref=e229]
+                - generic [ref=e232]: ROI-Focused Implementation
+              - generic [ref=e233]:
+                - img [ref=e235]
+                - generic [ref=e238]: Tech Stack Optimization
+              - generic [ref=e239]:
+                - img [ref=e241]
+                - generic [ref=e244]: Change Management
+            - button "Initiate Sequence" [ref=e245] [cursor=pointer]:
+              - generic [ref=e246]:
+                - text: Initiate Sequence
+                - img [ref=e247]
+          - generic [ref=e251]:
+            - img "AI Consulting & Strategy" [ref=e253]
+            - generic [ref=e256]:
+              - img [ref=e258]
+              - generic [ref=e260]:
+                - generic [ref=e261]: Live Status
+                - generic [ref=e263]: Strategic Sync
+        - generic [ref=e265]:
+          - generic [ref=e266]:
+            - generic [ref=e268]: "02"
+            - heading "Full-Stack Web & App Engineering" [level=3] [ref=e270]
+            - paragraph [ref=e271]: Premium digital experiences engineered for performance. We build blazing-fast, scalable applications using modern stacks like React, Next.js, and TypeScript.
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - img [ref=e275]
+                - generic [ref=e278]: Custom React/Next.js Apps
+              - generic [ref=e279]:
+                - img [ref=e281]
+                - generic [ref=e284]: Scalable Serverless Architecture
+              - generic [ref=e285]:
+                - img [ref=e287]
+                - generic [ref=e290]: Mobile-First Design
+              - generic [ref=e291]:
+                - img [ref=e293]
+                - generic [ref=e296]: SEO & Performance Optimization
+            - button "Initiate Sequence" [ref=e297] [cursor=pointer]:
+              - generic [ref=e298]:
+                - text: Initiate Sequence
+                - img [ref=e299]
+          - generic [ref=e303]:
+            - img "Full-Stack Web & App Engineering" [ref=e305]
+            - generic [ref=e308]:
+              - img [ref=e310]
+              - generic [ref=e312]:
+                - generic [ref=e313]: Live Status
+                - generic [ref=e315]: High Performance
+        - generic [ref=e317]:
+          - generic [ref=e318]:
+            - generic [ref=e320]: "03"
+            - heading "Neural AI Automation" [level=3] [ref=e322]
+            - paragraph [ref=e323]: Eliminate bottleneck processes with agentic workflows. Our neural automation systems operate across platforms to handle complex, multi-step tasks with zero human intervention.
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - img [ref=e327]
+                - generic [ref=e330]: Agentic Process Automation
+              - generic [ref=e331]:
+                - img [ref=e333]
+                - generic [ref=e336]: Cross-Platform Orchestration
+              - generic [ref=e337]:
+                - img [ref=e339]
+                - generic [ref=e342]: Intelligent Document Processing
+              - generic [ref=e343]:
+                - img [ref=e345]
+                - generic [ref=e348]: 80% Reduction in Manual Tasks
+            - button "Initiate Sequence" [ref=e349] [cursor=pointer]:
+              - generic [ref=e350]:
+                - text: Initiate Sequence
+                - img [ref=e351]
+          - generic [ref=e355]:
+            - img "Neural AI Automation" [ref=e357]
+            - generic [ref=e360]:
+              - img [ref=e362]
+              - generic [ref=e367]:
+                - generic [ref=e368]: Live Status
+                - generic [ref=e370]: Neural Active
+        - generic [ref=e372]:
+          - generic [ref=e373]:
+            - generic [ref=e375]: "04"
+            - heading "Proactive Voice AI Agents" [level=3] [ref=e377]
+            - paragraph [ref=e378]: Revolutionize communication with multimodal voice AI. Our agents provide natural, low-latency interactions for customer support, sales, and complex scheduling.
+            - generic [ref=e379]:
+              - generic [ref=e380]:
+                - img [ref=e382]
+                - generic [ref=e385]: Natural Language Processing
+              - generic [ref=e386]:
+                - img [ref=e388]
+                - generic [ref=e391]: Ultra-Low Latency Voice
+              - generic [ref=e392]:
+                - img [ref=e394]
+                - generic [ref=e397]: Multilingual Support
+              - generic [ref=e398]:
+                - img [ref=e400]
+                - generic [ref=e403]: CRM & Calendar Integration
+            - button "Initiate Sequence" [ref=e404] [cursor=pointer]:
+              - generic [ref=e405]:
+                - text: Initiate Sequence
+                - img [ref=e406]
+          - generic [ref=e410]:
+            - img "Proactive Voice AI Agents" [ref=e412]
+            - generic [ref=e415]:
+              - img [ref=e417]
+              - generic [ref=e420]:
+                - generic [ref=e421]: Live Status
+                - generic [ref=e423]: Voice Online
+        - generic [ref=e425]:
+          - generic [ref=e426]:
+            - generic [ref=e428]: "05"
+            - heading "Data & AI Intelligence" [level=3] [ref=e430]
+            - paragraph [ref=e431]: Turn raw data into decisive action. We engineer real-time data pipelines and predictive models that provide deep insights into your business's future.
+            - generic [ref=e432]:
+              - generic [ref=e433]:
+                - img [ref=e435]
+                - generic [ref=e438]: Real-Time Intelligence
+              - generic [ref=e439]:
+                - img [ref=e441]
+                - generic [ref=e444]: Predictive Trend Analysis
+              - generic [ref=e445]:
+                - img [ref=e447]
+                - generic [ref=e450]: Data Pipeline Engineering
+              - generic [ref=e451]:
+                - img [ref=e453]
+                - generic [ref=e456]: Automated Reporting
+            - button "Initiate Sequence" [ref=e457] [cursor=pointer]:
+              - generic [ref=e458]:
+                - text: Initiate Sequence
+                - img [ref=e459]
+          - generic [ref=e463]:
+            - img "Data & AI Intelligence" [ref=e465]
+            - generic [ref=e468]:
+              - img [ref=e470]
+              - generic [ref=e473]:
+                - generic [ref=e474]: Live Status
+                - generic [ref=e476]: Data Secure
+    - generic [ref=e479]:
+      - generic [ref=e480]:
+        - generic [ref=e481]: About Us
+        - heading "We Build What Your Business Actually Needs" [level=2] [ref=e482]:
+          - text: We Build What Your
+          - generic [ref=e483]:
+            - text: Business
+            - img [ref=e484]
+          - text: Actually Needs
+        - paragraph [ref=e486]: As a forward-thinking technology partner, we focus on helping ambitious businesses eliminate manual work and embrace seamless digital transformation. Our expertise spans custom-built software, intelligent AI automation, and high-performance technical architecture.
+        - paragraph [ref=e487]: We engineer fully autonomous systems that integrate flawlessly with your existing platform stack—bridging CRMs, specialized tools, and external APIs into one unified engine. Everything we deploy is fortified by strict security standards and industry compliance to keep your firm's data protected at scale.
+        - paragraph [ref=e488]: We believe in quality over volume. Every project is meticulously hand-crafted from the ground up — zero recycled templates, no generic shortcuts. We dedicate our full attention to understanding your unique operational bottlenecks and building targeted, scalable solutions.
+        - paragraph [ref=e490]: We consider ourselves your dedicated technical partners from Day 1, ensuring zero compromises on quality, performance, and impact.
+      - generic [ref=e491]:
+        - generic [ref=e492]:
+          - generic [ref=e494]: "01"
+          - generic [ref=e495]:
+            - generic [ref=e496]: 100%
+            - generic [ref=e497]: Custom Architecture
+        - generic [ref=e503]:
+          - generic [ref=e505]: "02"
+          - generic [ref=e506]:
+            - generic [ref=e507]: Autonomous
+            - generic [ref=e508]: AI Powered Systems
+        - generic [ref=e514]:
+          - generic [ref=e516]: "03"
+          - generic [ref=e517]:
+            - generic [ref=e518]: Analytics Driven
+            - generic [ref=e519]: Data-First Approach
+        - generic [ref=e525]:
+          - generic [ref=e527]: "04"
+          - generic [ref=e528]:
+            - generic [ref=e529]: Integration
+            - generic [ref=e530]: Seamless Integration
+        - generic [ref=e536]:
+          - generic [ref=e538]: "05"
+          - generic [ref=e539]:
+            - generic [ref=e540]: 1:1
+            - generic [ref=e541]: Dedicated Partnership
+    - generic [ref=e548]:
+      - generic [ref=e549]:
+        - generic [ref=e550]:
+          - generic [ref=e553]: Excellence Delivered
+          - heading "Proven Impact. Engineering Excellence." [level=2] [ref=e554]:
+            - text: Proven Impact.
+            - generic [ref=e555]: Engineering Excellence.
+        - paragraph [ref=e558]: We engineer bespoke intelligent systems that drive measurable business transformation across industries.
+      - generic [ref=e559]:
+        - generic [ref=e560]:
+          - img "Autonomous Support AI" [ref=e562]
+          - generic [ref=e566]:
+            - generic [ref=e567]:
+              - img [ref=e569]
+              - img [ref=e573]
+            - generic [ref=e576]:
+              - heading "Autonomous Support AI" [level=3] [ref=e577]
+              - paragraph [ref=e578]: Enterprise-grade LLM conversational agent that autonomously resolves 60% of tier-1 support queries, operating 24/7 with human-like reasoning capabilities.
+              - generic [ref=e579]:
+                - generic [ref=e580]: Generative AI
+                - generic [ref=e581]: Next.js
+                - generic [ref=e582]: OpenAI
+            - generic: "01"
+        - generic [ref=e583]:
+          - img "Predictive Demand Engine" [ref=e585]
+          - generic [ref=e589]:
+            - generic [ref=e590]:
+              - img [ref=e592]
+              - img [ref=e597]
+            - generic [ref=e600]:
+              - heading "Predictive Demand Engine" [level=3] [ref=e601]
+              - paragraph [ref=e602]: Dynamic pricing and demand forecasting suite utilizing advanced reinforcement learning algorithms.
+              - generic [ref=e603]:
+                - generic [ref=e604]: Reinforcement Learning
+                - generic [ref=e605]: E-Commerce
+            - generic: "02"
+        - generic [ref=e606]:
+          - img "Clinical NLP Extraction" [ref=e608]
+          - generic [ref=e612]:
+            - generic [ref=e613]:
+              - img [ref=e615]
+              - img [ref=e620]
+            - generic [ref=e623]:
+              - heading "Clinical NLP Extraction" [level=3] [ref=e624]
+              - paragraph [ref=e625]: HIPAA-compliant natural language processing engine designed to synthesize complex unstructured medical records.
+              - generic [ref=e626]:
+                - generic [ref=e627]: Healthcare
+                - generic [ref=e628]: Python
+            - generic: "03"
+        - generic [ref=e629]:
+          - img "IoT Fleet Intelligence" [ref=e631]
+          - generic [ref=e635]:
+            - generic [ref=e636]:
+              - img [ref=e638]
+              - img [ref=e642]
+            - generic [ref=e645]:
+              - heading "IoT Fleet Intelligence" [level=3] [ref=e646]
+              - paragraph [ref=e647]: Telematics tracking system utilizing predictive maintenance models to optimize routes and reduce downtime.
+              - generic [ref=e648]:
+                - generic [ref=e649]: IoT
+                - generic [ref=e650]: Edge AI
+            - generic: "04"
+        - generic [ref=e651]:
+          - img "Real-Time Transaction Analytics" [ref=e653]
+          - generic [ref=e657]:
+            - generic [ref=e658]:
+              - img [ref=e660]
+              - img [ref=e663]
+            - generic [ref=e666]:
+              - heading "Real-Time Transaction Analytics" [level=3] [ref=e667]
+              - paragraph [ref=e668]: High-throughput data ingestion pipeline processing heavy transaction volumes with sub-second latency.
+              - generic [ref=e669]:
+                - generic [ref=e670]: Big Data
+                - generic [ref=e671]: React
+                - generic [ref=e672]: PostgreSQL
+            - generic: "05"
+        - generic [ref=e673]:
+          - img "ML-Driven Sales CRM" [ref=e675]
+          - generic [ref=e679]:
+            - generic [ref=e680]:
+              - img [ref=e682]
+              - img [ref=e686]
+            - generic [ref=e689]:
+              - heading "ML-Driven Sales CRM" [level=3] [ref=e690]
+              - paragraph [ref=e691]: Machine learning integration for lead scoring and predictive conversion modeling, yielding a 34% increase in close rates.
+              - generic [ref=e692]:
+                - generic [ref=e693]: Machine Learning
+                - generic [ref=e694]: FastAPI
+                - generic [ref=e695]: CRM
+            - generic: "06"
+    - generic [ref=e697]:
+      - generic [ref=e698]:
+        - generic [ref=e699]: Client Results
+        - heading "Numbers That Speak for Themselves" [level=2] [ref=e700]
+        - paragraph [ref=e701]: Real business results delivered through tailored AI engineering and automation solutions.
+      - generic [ref=e702]:
+        - generic [ref=e703]:
+          - generic [ref=e705]:
+            - img [ref=e707]
+            - generic [ref=e709]: E-Commerce Platform
+          - generic [ref=e710]:
+            - generic [ref=e711]: 300%
+            - generic [ref=e712]: Average ROI
+          - paragraph [ref=e713]: AI-driven supply chain automation and real-time inventory intelligence drove 3x returns in year one.
+        - generic [ref=e714]:
+          - generic [ref=e716]:
+            - img [ref=e718]
+            - generic [ref=e720]: Healthcare Workflow
+          - generic [ref=e721]:
+            - generic [ref=e722]: 80%
+            - generic [ref=e723]: Time Saved
+          - paragraph [ref=e724]: Automated patient record processing and intelligent scheduling cut admin overhead dramatically.
+        - generic [ref=e725]:
+          - generic [ref=e727]:
+            - img [ref=e729]
+            - generic [ref=e732]: Data Pipeline
+          - generic [ref=e733]:
+            - generic [ref=e734]: 2.4M
+            - generic [ref=e735]: Data Points / Day
+          - paragraph [ref=e736]: Real-time pipeline processing millions of records with zero downtime.
+        - generic [ref=e737]:
+          - generic [ref=e739]:
+            - img [ref=e741]
+            - generic [ref=e746]: SaaS Integration
+          - generic [ref=e747]:
+            - generic [ref=e748]: $1.2M
+            - generic [ref=e749]: Revenue Generated
+          - paragraph [ref=e750]: Conversational AI agents boosted conversion rates by 40%, directly attributing $1.2M in new revenue.
+        - generic [ref=e751]:
+          - generic [ref=e753]:
+            - img [ref=e755]
+            - generic [ref=e760]: Record Launch Speed
+          - generic [ref=e761]:
+            - generic [ref=e762]: 48h
+            - generic [ref=e763]: To Deployment
+          - paragraph [ref=e764]: From kick-off to live production in 48 hours.
+    - generic [ref=e767]:
+      - generic [ref=e768]:
+        - generic [ref=e769]: Testimonials
+        - heading "What Our Partners Say" [level=2] [ref=e770]
+        - paragraph [ref=e771]: Don't just take our word for it — real feedback from companies we've helped scale and automate.
+      - generic [ref=e772]:
+        - generic [ref=e773]:
+          - generic [ref=e774]: "\""
+          - generic [ref=e775]:
+            - img [ref=e776]
+            - img [ref=e778]
+            - img [ref=e780]
+            - img [ref=e782]
+            - img [ref=e784]
+          - paragraph [ref=e786]: "\"They built an AI automation system that saved our team 25 hours per week. The ROI was visible within the first month. Incredible work.\""
+          - generic [ref=e787]:
+            - generic [ref=e788]: SM
+            - generic [ref=e789]:
+              - generic [ref=e790]: Sarah Mitchell
+              - generic [ref=e791]: CEO, TechScale
+        - generic [ref=e792]:
+          - generic [ref=e793]: "\""
+          - generic [ref=e794]:
+            - img [ref=e795]
+            - img [ref=e797]
+            - img [ref=e799]
+            - img [ref=e801]
+            - img [ref=e803]
+          - paragraph [ref=e805]: "\"The ML pipeline they built predicts our sales with 87% accuracy. It completely changed how we allocate resources. Highly recommended.\""
+          - generic [ref=e806]:
+            - generic [ref=e807]: JR
+            - generic [ref=e808]:
+              - generic [ref=e809]: James Rodriguez
+              - generic [ref=e810]: Founder, DataFlow
+        - generic [ref=e811]:
+          - generic [ref=e812]: "\""
+          - generic [ref=e813]:
+            - img [ref=e814]
+            - img [ref=e816]
+            - img [ref=e818]
+            - img [ref=e820]
+            - img [ref=e822]
+          - paragraph [ref=e824]: "\"Our custom dashboard went from concept to production in 3 weeks. Clean code, great communication, and zero issues post-launch.\""
+          - generic [ref=e825]:
+            - generic [ref=e826]: EC
+            - generic [ref=e827]:
+              - generic [ref=e828]: Emily Chen
+              - generic [ref=e829]: CTO, Growthly
+    - generic [ref=e832]:
+      - generic [ref=e833]:
+        - generic [ref=e834]: Let's Work Together
+        - heading "Ready to Transform Your Business?" [level=2] [ref=e835]
+        - paragraph [ref=e836]: Tell us about your project. We'll craft a custom solution that saves time, cuts costs, and scales with you.
+      - generic [ref=e837]:
+        - generic [ref=e838]:
+          - generic [ref=e839]:
+            - textbox "Your Name *" [ref=e841]
+            - textbox "Email Address *" [ref=e843]
+          - textbox "Company Name (optional)" [ref=e845]
+          - textbox "Tell us about your project — what problem are you solving?" [ref=e847]
+          - button "Send Message" [ref=e848] [cursor=pointer]:
+            - text: Send Message
+            - img [ref=e849]
+        - generic [ref=e851]:
+          - generic [ref=e852]:
+            - img [ref=e854]
+            - generic [ref=e857]:
+              - generic [ref=e858]: Email Us
+              - generic [ref=e859]: contact@nuralytics.io
+              - generic [ref=e860]: We reply within 4 hours
+          - generic [ref=e861]:
+            - img [ref=e863]
+            - generic [ref=e866]:
+              - generic [ref=e867]: Response Time
+              - generic [ref=e868]: < 4 Hours
+              - generic [ref=e869]: Business days, Mon–Fri
+          - generic [ref=e870]:
+            - img [ref=e872]
+            - generic [ref=e874]:
+              - generic [ref=e875]: Book a Call
+              - generic [ref=e876]: Schedule Instantly
+              - generic [ref=e877]: Free 30-min discovery call
+          - generic [ref=e878]:
+            - generic [ref=e879]: Our Promise
+            - paragraph [ref=e880]: We stay accountable until your system delivers measurable results — not just until delivery.
+    - contentinfo [ref=e881]:
+      - generic [ref=e884]:
+        - generic [ref=e885]:
+          - generic [ref=e886]: Nuralytics
+          - paragraph [ref=e889]: Custom web apps, AI automation, and business systems that save time and grow revenue for modern businesses.
+          - generic [ref=e890]:
+            - img [ref=e891]
+            - img [ref=e893]
+            - img [ref=e895]
+            - img [ref=e897]
+            - img [ref=e899]
+            - generic [ref=e901]: 5.0 — Trusted by 200+
+        - generic [ref=e902]:
+          - heading "Navigation" [level=4] [ref=e903]
+          - list [ref=e904]:
+            - listitem [ref=e905]:
+              - button "Home" [ref=e906] [cursor=pointer]
+            - listitem [ref=e907]:
+              - button "About Us" [ref=e908] [cursor=pointer]
+            - listitem [ref=e909]:
+              - button "Projects" [ref=e910] [cursor=pointer]
+            - listitem [ref=e911]:
+              - button "Services" [ref=e912] [cursor=pointer]
+            - listitem [ref=e913]:
+              - button "Testimonials" [ref=e914] [cursor=pointer]
+            - listitem [ref=e915]:
+              - button "Contact" [ref=e916] [cursor=pointer]
+        - generic [ref=e917]:
+          - heading "Services" [level=4] [ref=e918]
+          - list [ref=e919]:
+            - listitem [ref=e920]: Business Systems & Tools
+            - listitem [ref=e921]: AI Automation
+            - listitem [ref=e922]: Web & App Development
+            - listitem [ref=e923]: ML & Data Analysis
+        - generic [ref=e924]:
+          - heading "Contact" [level=4] [ref=e925]
+          - generic [ref=e926]:
+            - img [ref=e927]
+            - text: contact@nuralytics.com
+          - button "Book a Free Call" [ref=e930] [cursor=pointer]:
+            - text: Book a Free Call
+            - img [ref=e931]
+          - generic [ref=e933]:
+            - button [ref=e934] [cursor=pointer]:
+              - img [ref=e935]
+            - button [ref=e937] [cursor=pointer]:
+              - img [ref=e938]
+            - button [ref=e941] [cursor=pointer]:
+              - img [ref=e942]
+      - generic: NURALYTICS
+      - generic [ref=e947]:
+        - paragraph [ref=e948]: © 2026 Nuralytics. All rights reserved.
+        - generic [ref=e949]:
+          - generic [ref=e950] [cursor=pointer]: Privacy Policy
+          - generic [ref=e951] [cursor=pointer]: Terms of Service
